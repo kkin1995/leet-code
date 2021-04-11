@@ -1,4 +1,9 @@
 def defangIPaddr(address):
+    """
+    Given a valid (IPv4) IP address, return a defanged version of that IP address.
+
+    A defanged IP address replaces every period "." with "[.]".
+    """
     address_as_list = list(address)
     length_of_address = len(address_as_list)
     for i in range(length_of_address):
